@@ -1,3 +1,7 @@
 02/02/2015
     Instalação Ok
-    Criação dos Modulos: Admin, Cliente, Core, Empresa
+    Criação dos Modulos: Admin, Cliente, Core, Empresa Ok
+    Configuração do Doctrine Ok
+    Configuração da Tradução Ok
+    Configuração do Modulo Application Ok
+    

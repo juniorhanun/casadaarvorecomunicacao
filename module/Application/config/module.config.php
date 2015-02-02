@@ -62,11 +62,11 @@ return array(
         ),
     ),
     'translator' => array(
-        'locale' => 'en_US',
+        'locale' => 'pt_BR',
         'translation_file_patterns' => array(
             array(
                 'type'     => 'gettext',
-                'base_dir' => __DIR__ . '/../language',
+                'base_dir' => __DIR__ . '/../../Core/language',
                 'pattern'  => '%s.mo',
             ),
         ),
@@ -76,6 +76,10 @@ return array(
             'Application\Controller\Index' => 'Application\Controller\IndexController'
         ),
     ),
+    //Configurando qual Layout vai ser o padrão mo modelo
+    'module_layout' => array(
+        'Site' => 'layout/layout_application.phtml'
+    ),
     'view_manager' => array(
         'display_not_found_reason' => true,
         'display_exceptions'       => true,
@@ -83,10 +87,10 @@ return array(
         'not_found_template'       => 'error/404',
         'exception_template'       => 'error/index',
         'template_map' => array(
-            'layout/layout'           => __DIR__ . '/../view/layout/layout.phtml',
+            'layout/layout'           => __DIR__ . '/../view/layout/layout_application.phtml',
             'application/index/index' => __DIR__ . '/../view/application/index/index.phtml',
-            'error/404'               => __DIR__ . '/../view/error/404.phtml',
-            'error/index'             => __DIR__ . '/../view/error/index.phtml',
+            'error/404'               => __DIR__ . '/../../Core/view/error/404.phtml',
+            'error/index'             => __DIR__ . '/../../Core/view/error/index.phtml',
         ),
         'template_path_stack' => array(
             __DIR__ . '/../view',
