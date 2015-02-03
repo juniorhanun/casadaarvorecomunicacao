@@ -223,7 +223,7 @@ abstract class AbstractSchemaManager
     }
 
     /**
-     * Filters asset names if they are configured to return only a subset of all
+     * Filter asset names if they are configured to return only a subset of all
      * the found elements.
      *
      * @param array $assetNames

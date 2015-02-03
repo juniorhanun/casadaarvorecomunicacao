@@ -1,0 +1,55 @@
+Criação de Entidade
+Admin
+vendor/bin/doctrine-module orm:convert-mapping --filter="Admin" --from-database annotation --namespace="Admin\\Entity\\" module/Admin/src/
+
+vendor/bin/doctrine-module orm:convert-mapping --filter="AdminAssociados" --from-database annotation --namespace="Admin\\Entity\\" module/Admin/src/
+vendor/bin/doctrine-module orm:convert-mapping --filter="AdminDependentes" --from-database annotation --namespace="Admin\\Entity\\" module/Admin/src/
+vendor/bin/doctrine-module orm:convert-mapping --filter="AdminEmpresas" --from-database annotation --namespace="Admin\\Entity\\" module/Admin/src/
+vendor/bin/doctrine-module orm:convert-mapping --filter="AdminMaterial" --from-database annotation --namespace="Admin\\Entity\\" module/Admin/src/
+vendor/bin/doctrine-module orm:convert-mapping --filter="AdminMensalidade" --from-database annotation --namespace="Admin\\Entity\\" module/Admin/src/
+vendor/bin/doctrine-module orm:convert-mapping --filter="AdminMoedas" --from-database annotation --namespace="Admin\\Entity\\" module/Admin/src/
+vendor/bin/doctrine-module orm:convert-mapping --filter="AdminMovimentoCaixa" --from-database annotation --namespace="Admin\\Entity\\" module/Admin/src/
+vendor/bin/doctrine-module orm:convert-mapping --filter="AdminNotasFiscais" --from-database annotation --namespace="Admin\\Entity\\" module/Admin/src/
+vendor/bin/doctrine-module orm:convert-mapping --filter="AdminObitos" --from-database annotation --namespace="Admin\\Entity\\" module/Admin/src/
+vendor/bin/doctrine-module orm:convert-mapping --filter="AdminObitosDespesa" --from-database annotation --namespace="Admin\\Entity\\" module/Admin/src/
+vendor/bin/doctrine-module orm:convert-mapping --filter="AdminServicos" --from-database annotation --namespace="Admin\\Entity\\" module/Admin/src/
+vendor/bin/doctrine-module orm:convert-mapping --filter="AdminUrnas" --from-database annotation --namespace="Admin\\Entity\\" module/Admin/src/
+vendor/bin/doctrine-module orm:convert-mapping --filter="AdminGeraMensalidade" --from-database annotation --namespace="Admin\\Entity\\" module/Admin/src/
+
+
+
+Geraçãodos Gets and Sets
+Admin
+vendor/bin/doctrine-module orm:generate-entities --filter="Admin" --generate-annotations="true" --generate-methods="true" module/Admin/src
+
+vendor/bin/doctrine-module orm:generate-entities --filter="AdminAssociados" --generate-annotations="true" --generate-methods="true" module/Admin/src
+vendor/bin/doctrine-module orm:generate-entities --filter="AdminDependentes" --generate-annotations="true" --generate-methods="true" module/Admin/src
+vendor/bin/doctrine-module orm:generate-entities --filter="AdminEmpresas" --generate-annotations="true" --generate-methods="true" module/Admin/src
+vendor/bin/doctrine-module orm:generate-entities --filter="AdminMaterial" --generate-annotations="true" --generate-methods="true" module/Admin/src
+vendor/bin/doctrine-module orm:generate-entities --filter="AdminMensalidade" --generate-annotations="true" --generate-methods="true" module/Admin/src
+vendor/bin/doctrine-module orm:generate-entities --filter="AdminMoedas" --generate-annotations="true" --generate-methods="true" module/Admin/src
+vendor/bin/doctrine-module orm:generate-entities --filter="AdminMovimentoCaixa" --generate-annotations="true" --generate-methods="true" module/Admin/src
+vendor/bin/doctrine-module orm:generate-entities --filter="AdminNotasFiscais" --generate-annotations="true" --generate-methods="true" module/Admin/src
+vendor/bin/doctrine-module orm:generate-entities --filter="AdminObitos" --generate-annotations="true" --generate-methods="true" module/Admin/src
+vendor/bin/doctrine-module orm:generate-entities --filter="AdminObitosDespesa" --generate-annotations="true" --generate-methods="true" module/Admin/src
+vendor/bin/doctrine-module orm:generate-entities --filter="AdminServicos" --generate-annotations="true" --generate-methods="true" module/Admin/src
+vendor/bin/doctrine-module orm:generate-entities --filter="AdminUrnas" --generate-annotations="true" --generate-methods="true" module/Admin/src
+vendor/bin/doctrine-module orm:generate-entities --filter="AdminGeraMensalidade" --generate-annotations="true" --generate-methods="true" module/Admin/src
+
+Criação dos Repositorios
+Admin
+vendor/bin/doctrine-module orm:generate-repositories --filter="Admin" module/Admin/src/
+
+vendor/bin/doctrine-module orm:generate-repositories --filter="AdminAssociados" module/Admin/src/
+vendor/bin/doctrine-module orm:generate-repositories --filter="AdminDependentes" module/Admin/src/
+vendor/bin/doctrine-module orm:generate-repositories --filter="AdminEmpresas" module/Admin/src/
+vendor/bin/doctrine-module orm:generate-repositories --filter="AdminMaterial" module/Admin/src/
+vendor/bin/doctrine-module orm:generate-repositories --filter="AdminMensalidade" module/Admin/src/
+vendor/bin/doctrine-module orm:generate-repositories --filter="AdminMoedas" module/Admin/src/
+vendor/bin/doctrine-module orm:generate-repositories --filter="AdminMovimentoCaixa" module/Admin/src/
+vendor/bin/doctrine-module orm:generate-repositories --filter="AdminNotasFiscais" module/Admin/src/
+vendor/bin/doctrine-module orm:generate-repositories --filter="AdminObitos" module/Admin/src/
+vendor/bin/doctrine-module orm:generate-repositories --filter="AdminObitosDespesa" module/Admin/src/
+vendor/bin/doctrine-module orm:generate-repositories --filter="AdminServicos" module/Admin/src/
+vendor/bin/doctrine-module orm:generate-repositories --filter="AdminUrnas" module/Admin/src/
+vendor/bin/doctrine-module orm:generate-repositories --filter="AdminGeraMensalidade" module/Admin/src/

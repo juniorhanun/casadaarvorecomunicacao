@@ -45,7 +45,7 @@ class LoginForm extends Form
             ->setAttributes(array(
                 'class' => 'form-control',
                 'id' => 'senha',
-                'placeholder' => 'Entre com o Login.:'
+                'placeholder' => 'Entre com o Senha.:'
             ));
         $this->add($senha);
 

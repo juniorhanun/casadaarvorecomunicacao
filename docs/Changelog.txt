@@ -1,0 +1,15 @@
+02/02/2015
+    Instalação Ok
+    Criação dos Modulos: Admin, Cliente, Core, Empresa Ok
+    Configuração do Doctrine Ok
+    Configuração da Tradução Ok
+    Configuração do Modulo Application Ok
+    Criação Modulo Admin OK
+    Configuração do module.config Admin
+    Criação do arquivo style_admin.css Ok
+    Criação do arquivo admin.css Ok
+    Configuração layout_admin.phtml
+    Criação da Entidade Admin Ok
+    Criação do Controller Admin
+    Criação do Formulario Admin OK
+    Criação do Sistema de autenticação

@@ -106,7 +106,7 @@ class ObjectExists extends AbstractValidator
     }
 
     /**
-     * Filters and validates the fields passed to the constructor
+     * Filter and validates the fields passed to the constructor
      *
      * @throws \Zend\Validator\Exception\InvalidArgumentException
      * @return array

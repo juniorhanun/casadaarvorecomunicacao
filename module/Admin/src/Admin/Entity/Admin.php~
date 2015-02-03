@@ -1,0 +1,137 @@
+<?php
+
+namespace Admin\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Admin
+ *
+ * @ORM\Table(name="admin")
+ * @ORM\Entity
+ */
+class Admin
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nome", type="string", length=45, nullable=true)
+     */
+    private $nome;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="login", type="string", length=45, nullable=true)
+     */
+    private $login;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="senha", type="string", length=255, nullable=true)
+     */
+    private $senha;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="cpf", type="string", length=20, nullable=true)
+     */
+    private $cpf;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="rg", type="string", length=20, nullable=true)
+     */
+    private $rg;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="email", type="string", length=100, nullable=true)
+     */
+    private $email;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="cep", type="string", length=10, nullable=true)
+     */
+    private $cep;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="estado", type="string", length=45, nullable=true)
+     */
+    private $estado;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="cidade", type="string", length=45, nullable=true)
+     */
+    private $cidade;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="bairro", type="string", length=45, nullable=true)
+     */
+    private $bairro;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="endereco", type="string", length=100, nullable=true)
+     */
+    private $endereco;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="complemento", type="string", length=100, nullable=true)
+     */
+    private $complemento;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="salt", type="string", length=255, nullable=true)
+     */
+    private $salt;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="data_cadastro", type="date", nullable=true)
+     */
+    private $dataCadastro;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="date_alteracao", type="date", nullable=true)
+     */
+    private $dateAlteracao;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="status", type="string", length=45, nullable=true)
+     */
+    private $status;
+
+
+}

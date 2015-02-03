@@ -13,7 +13,7 @@ return array(
         'Admin',
         'Core',
         'Cliente',
-        'Empresa'
+        'Empresa',
         ),
     'module_listener_options' => array(
         'module_paths' => array(

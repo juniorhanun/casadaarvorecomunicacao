@@ -1,0 +1,53 @@
+<?php
+// objeto form contato
+$form = $this->form;
+// preparar elementos do formulário
+$form->prepare();
+// configurar url formulário
+$form->setAttribute('action', $this->url('admin-auth', array('controller' => 'index', 'action' => 'index')));
+// renderiza html <form> com atributos configurados no objeto
+echo $this->form()->openTag($form) ?>
+
+
+<table border="0" align="center" cellpadding="0" cellspacing="0">
+
+    <tr>
+        <td>
+            <div class="tabela_" style=" min-width:inherit;">
+                <table border="0" cellpadding="6" cellspacing="0" class="tabela">
+                    <tr>
+                        <td colspan="2" align="left"  class="subMenu">Acesse com seus dados</td>
+                    </tr>
+                    <tr>
+                        <td align="right" class="textoNormalEscuro">Login:</td>
+                        <td align="left" valign="top">
+                            <?php
+                            // renderiza html input
+                            echo $this->formInput($form->get('login'));
+                            ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right" class="textoNormalEscuro">Senha:</td>
+                        <td align="left" valign="top">
+                            <?php
+                            // renderiza html input
+                            echo $this->formInput($form->get('senha'));
+                            ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" valign="bottom">&nbsp;</td>
+                        <td align="left" valign="bottom">
+                            <input class="bt1" type="submit" name="button" id="button" value="Entrar" />
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+        </td>
+    </tr>
+
+
+</table>
+<?php echo $this->form()->closeTag() ?>

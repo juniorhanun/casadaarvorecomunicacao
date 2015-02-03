@@ -126,7 +126,7 @@ abstract class AbstractController extends AbstractActionController
                 // Pega a Instancia do serviço "Entidade"
                 $service = $this->getServiceLocator()->get($this->service);
                 $datas = $request->getPost()->toArray();
-                $datas['id_funcionarios'] = $this->getEm()->getRepository('Pax\Entity\PaxFuncionarios')->find(1);
+                //$datas['id_funcionarios'] = $this->getEm()->getRepository('Pax\Entity\PaxFuncionarios')->find(1);
 
                 // Verifica se foi inserido os dados com sucesso na entidade
                 if ($service->save($datas)){
